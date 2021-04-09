@@ -1,18 +1,11 @@
 import express from 'express';
-import User from '../models/user.models.js'
+import User from '../models/user.models.js';
+
+import { getUsers } from '../controllers/users.controllers.js'
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {
-    try {
-        const users = await User.find();
-        console.log(users);
-        res.status(200).json(users);
-    
-    } catch (error) {
-        res.status(404).json({ message: error.message });
-    }
-});
+router.get('/', getUsers);
 
 router.post('/add', async (req, res) => {
     
