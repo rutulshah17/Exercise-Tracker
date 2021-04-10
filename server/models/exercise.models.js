@@ -1,4 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
+import mongoose from 'mongoose';
 
 const exerciseSchema = mongoose.Schema({
         username: { type: String, required: true },
