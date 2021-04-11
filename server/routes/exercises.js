@@ -17,20 +17,18 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/add', async (req, res) => {
-    const username = req.body.username;
-    const description = req.body.description;
-    const duration = Number(req.body.duration);
-    const date = Date.parse(req.body.date);
+    const exercise = req.body;
 
-    console.log(username, description, duration, date);
-
-    const newExercise = new Execrise({
-        username,
-        description,
-        duration,
-        date
-    });
-
+    //sending below
+    /*
+    {
+        username: 'Rutul',
+        description: 'Running',
+        duration: '10',
+        date: '2021-04-11'
+    }
+    */
+    const newExercise = new Execrise(exercise);
     try {
         await newExercise.save();
         res.status(201).json(newExercise);

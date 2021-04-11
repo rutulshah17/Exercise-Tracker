@@ -1,7 +1,5 @@
 import express from 'express';
-import User from '../models/user.models.js';
-
-import { getUsers } from '../controllers/users.controllers.js'
+import User from '../models/user.models.js'
 
 const router = express.Router();
 
@@ -17,10 +15,10 @@ router.get('/', async (req, res) => {
 
 router.post('/add', async (req, res) => {
     
-    const userName = req.body.userName;
+    const userName = req.body
     
     //sending { username: 'Rutul' }
-    const newUser = new User({userName});
+    const newUser = new User(userName);
 
     try {
         await newUser.save();
