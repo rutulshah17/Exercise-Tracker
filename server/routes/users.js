@@ -17,7 +17,8 @@ router.post('/add', async (req, res) => {
     
     const userName = req.body
     
-    //sending { username: 'Rutul' }
+    //sending req.body as below 
+    //{ username: 'Rutul' }
     const newUser = new User(userName);
 
     try {
