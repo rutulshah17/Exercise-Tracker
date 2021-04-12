@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExerciseCreate = () =>  {
+const CreateExercise = () =>  {
     return (
       <div>
         <p>You are on the Exercises Create component!</p>
@@ -8,4 +8,4 @@ const ExerciseCreate = () =>  {
     );
 }
 
-export default ExerciseCreate;
+export default CreateExercise;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserCreate = () =>  {
+const CreateUser = () =>  {
     return (
       <div>
         <p>You are on the Create Users component!</p>
@@ -8,4 +8,4 @@ const UserCreate = () =>  {
     );
 }
 
-export default UserCreate;
+export default CreateUser;
