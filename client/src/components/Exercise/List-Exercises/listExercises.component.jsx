@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExercisesList = () =>  {
+const ListExercises = () =>  {
     return (
       <div>
         <p>You are on the Exercises List component!</p>
@@ -8,4 +8,4 @@ const ExercisesList = () =>  {
     );
 }
 
-export default ExercisesList;
+export default ListExercises;

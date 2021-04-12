@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExerciseEdit = () =>  {
+const EditExercise = () =>  {
     return (
       <div>
         <p>You are on the Exercises Edit component!</p>
@@ -8,4 +8,4 @@ const ExerciseEdit = () =>  {
     );
 }
 
-export default ExerciseEdit;
+export default EditExercise;

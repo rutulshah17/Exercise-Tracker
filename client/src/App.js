@@ -4,20 +4,20 @@ import { Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from "./components/Navbar/Navbar.component";
-import ExercisesList from "./components/Exercise/Exercises-List/exercisesList.component";
-import ExerciseEdit from "./components/Exercise/Exercise-Edit/exercisesEdit.component";
-import ExerciseCreate from "./components/Exercise/Exercise-Create/exerciseCreate.component";
-import UserCreate from "./components/User/User-Create/userCreate.component";
+import ListExercises from "./components/Exercise/List-Exercises/listExercises.component";
+import EditExercise from "./components/Exercise/Edit-Exercise/editExercise.component";
+import CreateExercise from "./components/Exercise/Create-Exercise/createExercise.component";
+import CreateUser from "./components/User/Create-User/createUser.component";
 
 const App = () => {
   return (
     <div className='container'>
       <Navbar />
       <br />
-      <Route path='/' exact component={ExercisesList} />
-      <Route path='/edit/:id' component={ExerciseEdit} />
-      <Route path='/create' component={ExerciseCreate} />
-      <Route path='/user' component={UserCreate} />      
+      <Route path='/' exact component={ListExercises} />
+      <Route path='/edit/:id' component={EditExercise} />
+      <Route path='/create' component={CreateExercise} />
+      <Route path='/user' component={CreateUser} />      
     </div>
   );
 }
